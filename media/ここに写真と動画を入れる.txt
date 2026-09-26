@@ -1,0 +1,10 @@
+このフォルダに、次の名前で入れると自動で表示されます。
+hero.mp4   最初に広がる動画
+step1.jpg  版を選ぶ
+step2.jpg  色を決める
+step3.jpg  刷る
+step4.jpg  乾かす
+shop.jpg   店の中
+fact1.jpg  1 hour
+fact2.jpg  Nothing to bring
+fact3.jpg  From age 3
