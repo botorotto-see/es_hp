@@ -23,7 +23,7 @@
   "description": "Tシャツやトートバッグに自分で刷る、シルクスクリーン体験の店",
   "url": "https://edition-see.com/",
   "address": {"@type": "PostalAddress","streetAddress": "元町通1-3-11 2F","addressLocality": "神戸市中央区","addressRegion": "兵庫県","addressCountry": "JP"},
-  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Friday","Saturday","Sunday"],"opens": "12:00","closes": "18:00"}]
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"],"opens": "12:00","closes": "18:00"},{"@type": "OpeningHoursSpecification","dayOfWeek": ["Saturday","Sunday"],"opens": "12:00","closes": "19:00"}]
 }
 </script>
 <style>
@@ -138,7 +138,7 @@ section{padding:clamp(88px,11vw,160px) var(--pad)}
 .price{margin-top:clamp(40px,5vw,72px);border-top:1px solid currentColor}
 .row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1.6fr) auto;align-items:baseline;gap:16px;padding:clamp(22px,3vw,34px) 0;border-bottom:1px solid currentColor}
 .row .item{font-size:clamp(24px,2.6vw,36px);letter-spacing:-.03em}
-.row .total{font-size:clamp(34px,4vw,56px);letter-spacing:-.04em;line-height:1}
+.row .total{font-family:var(--en);font-weight:400;font-size:clamp(34px,4vw,56px);letter-spacing:-.04em;line-height:1}
 @media (max-width:760px){.row{grid-template-columns:1fr auto}.row .detail{grid-column:1/-1;order:3}}
 
 /* ===== よくある質問 ===== */
@@ -258,12 +258,13 @@ footer a{text-decoration:none}
   <section class="lime" id="price">
     <div class="wrap">
       <h2 class="h2">Price<span class="ja-note" lang="ja">料金</span></h2>
-      <div class="price">
-        <div class="row"><span class="item">Experience fee</span><span class="detail sub">Per design.</span><span class="total">¥2,000</span></div>
-        <div class="row"><span class="item">2nd item and more</span><span class="detail sub">Print only.</span><span class="total">¥1,000</span></div>
+      <div class="price" lang="ja">
+        <div class="row"><span class="item">店で買ったアイテム</span><span class="detail sub">1点目のプリント代</span><span class="total">¥1,500</span></div>
+        <div class="row"><span class="item">2点目から</span><span class="detail sub">次に同じアイテムを持ってきた時も、この値段です</span><span class="total">¥1,000</span></div>
+        <div class="row"><span class="item">持ち込み</span><span class="detail sub">自分のアイテムを持ってくる場合。1デザインにつき</span><span class="total">¥2,000</span></div>
       </div>
-      <p style="margin-top:20px">Item not included. Buy one at the shop, or bring your own.</p>
-      <p class="sub" style="margin-top:6px">At the shop: T-shirt ¥3,500 / Tote bag ¥2,000</p>
+      <p lang="ja" style="margin-top:20px">店のアイテム：¥2,000〜（税込）</p>
+      <p lang="ja" class="sub" style="margin-top:6px">例：トートバッグ ¥2,000 ＋ 1点目のプリント ¥1,500 ＝ ¥3,500</p>
     </div>
   </section>
 
@@ -275,7 +276,7 @@ footer a{text-decoration:none}
         <details><summary>How long does it take?</summary><p>1 hour.</p></details>
         <details><summary>What should I bring?</summary><p>Nothing. Just come.</p></details>
         <details><summary>Can kids join?</summary><p>Yes, from age 3.</p></details>
-        <details><summary>Can I print my own design?</summary><p>Yes. Experience fee ¥2,000 per design. Item not included.</p></details>
+        <details><summary>Can I bring my own item?</summary><p>Yes. ¥2,000 per design.</p></details>
       </div>
     </div>
   </section>
@@ -289,7 +290,7 @@ footer a{text-decoration:none}
       </div>
       <div class="info">
         <div><h3>Shop</h3><address><span lang="ja">神戸市中央区元町通1-3-11 2F</span><br>20 steps from Nankinmachi Square.</address></div>
-        <div><h3>Hours</h3><p>12:00–18:00<br>Closed on Thursdays <span lang="ja">（木曜休み）</span></p></div>
+        <div><h3>Hours</h3><p>Mon–Wed, Fri 12:00–18:00<br>Sat–Sun 12:00–19:00<br>Last booking 18:00<br>Closed on Thursdays <span lang="ja">（木曜休み）</span></p><p class="sub" style="margin-top:10px;font-size:14px">Booking first. We may close early when there are no bookings.<br><span lang="ja">予約優先です。予約がない時は、早めに閉めることがあります。</span></p></div>
         <div><h3>Map</h3><p><a class="link" href="https://maps.app.goo.gl/xffJ6kK636p7FBq89" target="_blank" rel="noopener">Open Google Maps</a></p></div>
         <div><h3>Follow</h3><p><a class="link" href="https://www.instagram.com/edition_see/" target="_blank" rel="noopener">Instagram @edition_see</a></p></div>
       </div>
