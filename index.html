@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EDITION SEE?｜神戸・南京町でTシャツを自分で刷る体験</title>
-<meta name="description" content="神戸・南京町の広場から20歩。Tシャツやトートバッグに、自分で刷る体験の店です。1時間、手ぶらでOK、3歳からできます。">
+<meta name="description" content="神戸・南京町の広場から20歩。Tシャツやトートバッグに、自分で刷る体験の店です。1時間、手ぶらでOK、小学校低学年からできます。">
 <meta property="og:title" content="EDITION SEE?｜神戸・南京町でTシャツを自分で刷る体験">
 <meta property="og:description" content="神戸・南京町の広場から20歩。Tシャツやトートバッグに、自分で刷ります。">
 <meta property="og:type" content="website">
@@ -164,6 +164,13 @@ details p{padding:0 0 24px}
 footer{padding:24px var(--pad) calc(24px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--sub-on-dark)}
 footer a{text-decoration:none}
 
+/* アクセス動画 */
+.visit-grid{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:clamp(32px,5vw,88px);align-items:start;margin-top:clamp(64px,8vw,120px)}
+.visit-grid .info{margin-top:0;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+.access-video{position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:#0b0b0b;display:grid;place-items:center;font-size:13px;color:var(--sub-on-dark)}
+.access-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){.visit-grid{grid-template-columns:1fr}.access-video{width:100%;max-width:420px;margin:0 auto}}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .hero{height:auto}
@@ -250,7 +257,7 @@ footer a{text-decoration:none}
     <div class="wrap facts">
       <div class="fact"><div class="ph">Photo: media/fact1.jpg<img data-media="fact1" data-fallback="step3" alt="" loading="lazy"></div><h3>1 hour</h3><p class="sub">From start to finish.</p></div>
       <div class="fact"><div class="ph">Photo: media/fact2.jpg<img data-media="fact2" data-fallback="shop" alt="" loading="lazy"></div><h3>Nothing to bring</h3><p class="sub">Just come.</p></div>
-      <div class="fact"><div class="ph">Photo: media/fact3.jpg<img data-media="fact3" data-fallback="step4" alt="" loading="lazy"></div><h3>From age 3</h3><p class="sub">Kids can join.</p></div>
+      <div class="fact"><div class="ph">Photo: media/fact3.jpg<img data-media="fact3" data-fallback="step4" alt="" loading="lazy"></div><h3>From 1st grade</h3><p class="sub">Kids can join.</p></div>
     </div>
   </section>
 
@@ -272,11 +279,16 @@ footer a{text-decoration:none}
   <section class="lime" style="padding-top:0">
     <div class="wrap faq">
       <h2 class="h2">Questions<span class="ja-note" lang="ja">よくある質問</span></h2>
-      <div>
-        <details><summary>How long does it take?</summary><p>1 hour.</p></details>
-        <details><summary>What should I bring?</summary><p>Nothing. Just come.</p></details>
-        <details><summary>Can kids join?</summary><p>Yes, from age 3.</p></details>
-        <details><summary>Can I bring my own item?</summary><p>Yes. ¥2,000 per design.</p></details>
+      <div lang="ja">
+        <details><summary>予約は必要ですか？</summary><p>予約優先です。予約がなくても、空いていれば体験できます。</p></details>
+        <details><summary>どれくらいかかりますか？</summary><p>1時間ほどで完成します。<br>説明 → アイテムを選ぶ → デザインを選ぶ → 色を選ぶ → 刷る → フォトスポットで撮影</p></details>
+        <details><summary>何を持っていけばいいですか？</summary><p>何もいりません。手ぶらで来てください。</p></details>
+        <details><summary>子どもでもできますか？</summary><p>小学校低学年からできます。低学年のお子さんは、大人の付き添いが必要です。</p></details>
+        <details><summary>自分のアイテムを持ってきてもいいですか？</summary><p>はい。1デザイン2,000円です。</p></details>
+        <details><summary>その日に持って帰れますか？</summary><p>はい。そのまま持って帰れます。</p></details>
+        <details><summary>洗濯はできますか？</summary><p>できます。刷ってから24時間、自然に乾かしてから洗うのがおすすめです。</p></details>
+        <details><summary>支払い方法は何がありますか？</summary><p>現金とPayPayが使えます。</p></details>
+        <details><summary>何人まで一緒に体験できますか？</summary><p>2枠分の予約で、8人まで一緒に体験できます。それより多い場合は、お電話で相談してください。<br><a class="link" href="tel:07026160776">070-2616-0776</a></p></details>
       </div>
     </div>
   </section>
@@ -288,11 +300,14 @@ footer a{text-decoration:none}
         <h2 class="h2">Come and print.</h2>
         <a class="btn" href="https://reserve.peraichi.com/r/2bb4d0dd/select_date?course=54808" data-reserve>Book</a>
       </div>
+      <div class="visit-grid">
+        <div class="access-video"><span>Video: media/access.mp4</span><video data-media="access" autoplay muted loop playsinline preload="auto" aria-label="Map from Motomachi Station to EDITION SEE?"></video></div>
       <div class="info">
         <div><h3>Shop</h3><address><span lang="ja">神戸市中央区元町通1-3-11 2F</span><br>20 steps from Nankinmachi Square.</address></div>
         <div><h3>Hours</h3><p>Mon–Wed, Fri 12:00–18:00<br>Sat–Sun 12:00–19:00<br>Last booking 18:00<br>Closed on Thursdays <span lang="ja">（木曜休み）</span></p><p class="sub" style="margin-top:10px;font-size:14px">Booking first. We may close early when there are no bookings.<br><span lang="ja">予約優先です。予約がない時は、早めに閉めることがあります。</span></p></div>
         <div><h3>Map</h3><p><a class="link" href="https://maps.app.goo.gl/xffJ6kK636p7FBq89" target="_blank" rel="noopener">Open Google Maps</a></p></div>
         <div><h3>Follow</h3><p><a class="link" href="https://www.instagram.com/edition_see/" target="_blank" rel="noopener">Instagram @edition_see</a></p></div>
+      </div>
       </div>
       <!-- 道具の線画 -->
       <div class="lines" aria-hidden="true">
